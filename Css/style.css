@@ -11,9 +11,10 @@
 
 .container p {
   position: absolute;
-  font-size: 3rem;
-  transform: translate(-12px, 80px) rotate(0deg);
+  font-size: 2.5rem;
+  transform: translate(5px, 90px) rotate(-90deg);
   font-family: var(--font-family2);
+  color: var(--frist-color);
   rotate: 90deg;
   left: 50%;
   top: 50%;
@@ -21,7 +22,7 @@
 
 .controll-btn {
   width: 100%;
-  height: 5vh;
+  height: 45px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -45,7 +46,7 @@
 
 .stopwatch {
   width: 100%;
-  height: 55vh;
+  height: 315px;
   position: relative;
   color: var(--frist-color);
   transform: rotate(270deg);

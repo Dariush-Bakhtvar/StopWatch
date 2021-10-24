@@ -7,9 +7,10 @@
     position: relative;
     p {
         position: absolute;
-        font-size: 3rem;
-        transform: translate(-12px, 80px) rotate(0deg);
+        font-size: 2.5rem;
+        transform: translate(5px, 90px) rotate(-90deg);
         font-family: var(--font-family2);
+        color: var(--frist-color);
         rotate: 90deg;
         left: 50%;
         top: 50%;
@@ -17,7 +18,7 @@
 }
 
 .controll-btn {
-    @include size(100%, 5vh);
+    @include size(100%, 45px);
     @include flex(flex, space-between, center, row-reverse);
     font-size: 1.4rem;
     padding: 7px 7px 0;
@@ -35,7 +36,7 @@
 }
 
 .stopwatch {
-    @include size(100%, 55vh);
+    @include size(100%, 315px);
     position: relative;
     color: var(--frist-color);
     transform: rotate(270deg);
