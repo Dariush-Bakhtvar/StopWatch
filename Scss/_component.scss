@@ -1,10 +1,14 @@
 @import "mixin";
+
+/** conitaner style */
+
 .container {
     @include size(340px, 365px);
     background-color: transparent;
     box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
     border-radius: 12px;
     position: relative;
+    /** centeral P for show Timer */
     p {
         position: absolute;
         font-size: 2.5rem;
@@ -101,8 +105,4 @@
 
 .active {
     animation: loading 1s linear infinite;
-}
-
-.hov {
-    color: #17aef3;
 }

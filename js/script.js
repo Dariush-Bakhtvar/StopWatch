@@ -38,6 +38,7 @@ function PauseTime() {
     for (let i = 0; i < 100; i++) {
         loading[i].classList.remove('active');
     }
+    pElem.style.color = "var(--frist-color)";
 }
 // start function
 function starter() {

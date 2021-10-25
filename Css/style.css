@@ -1,3 +1,4 @@
+/** conitaner style */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 .container {
@@ -7,6 +8,7 @@
   box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
   border-radius: 12px;
   position: relative;
+  /** centeral P for show Timer */
 }
 
 .container p {
@@ -732,10 +734,6 @@
 /** active loading animation when user click on start btn */
 .active {
   animation: loading 1s linear infinite;
-}
-
-.hov {
-  color: #17aef3;
 }
 
 :root {
