@@ -40,7 +40,12 @@
         // border-radius: 10px !important;
         i {
             font-size: 1.5rem;
-            color: var(--bg-icon);
+            color: var(--frist-color);
+        }
+        &:hover {
+            i {
+                color: var(--threet-color);
+            }
         }
         &:active {
             background: #e6e6e6;

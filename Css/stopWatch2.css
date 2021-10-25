@@ -222,7 +222,11 @@ body {
 
 .controll-btn span i {
   font-size: 1.5rem;
-  color: var(--bg-icon);
+  color: var(--frist-color);
+}
+
+.controll-btn span:hover i {
+  color: var(--threet-color);
 }
 
 .controll-btn span:active {
