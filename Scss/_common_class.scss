@@ -1,3 +1,11 @@
+@import "mixin";
+@import "base";
 %inherit-flex {
     @include flex(flex, space-around, center);
+}
+
+%comon-bg-style {
+    background-color: transparent;
+    box-shadow: var(--default-shadow);
+    border-radius: var(--default-radius);
 }

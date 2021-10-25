@@ -1,5 +1,4 @@
 @import "mixin";
-@import "component";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 // @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
@@ -15,6 +14,8 @@
     --li-color: #01080c;
     --font: "Lora", serif;
     --font-family2: "Orbitron", monospace, sans-serif;
+    --default-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+    --default-radius: 20px;
     font-size: 62.5%;
 }
 

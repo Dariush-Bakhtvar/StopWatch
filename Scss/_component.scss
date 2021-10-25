@@ -1,4 +1,6 @@
 @import "mixin";
+@import "base";
+@import "common_class";
 
 /** conitaner style */
 
@@ -126,18 +128,13 @@
 }
 
 .times {
+    @include flex(flex, space-around, center, column);
     @include size(20%, 85%);
-    background-color: transparent;
-    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
-    text-align: center;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    @extend %comon-bg-style;
     font-family: var(--font-family2);
     color: var(--fiveth-color);
+    overflow: hidden;
+    cursor: pointer;
     p {
         font-size: 4rem;
     }
@@ -159,35 +156,33 @@
 
 .timer-btn {
     @include size(120px, 40px);
-    background-color: transparent;
-    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+    @extend %comon-bg-style;
     color: var(--threet-color);
-    border-radius: 5px;
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    transition: box-shadow 1.2 ease-in-out;
     &:active {
-        transition: all 2.5s ease-in-out;
         box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
     }
 }
 
 #record {
     @include size(40%, 200px);
+    @extend %comon-bg-style;
     resize: none;
     border: none;
     font-size: 2rem;
-    color: map-get($map: $color, $key: one);
+    color: var(--fiveth-color);
     padding: 10px;
     font-weight: bold;
-    border-radius: 20px;
     margin-top: 20px;
     text-align: center;
-    background-color: transparent;
-    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+    &:focus {
+        outline: none;
+    }
 }
 
+// add style by event delegatation
 .active-button {
     box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
     i {
