@@ -106,3 +106,91 @@
 .active {
     animation: loading 1s linear infinite;
 }
+
+
+/** stow watch 2 style */
+
+.cornometer {
+    @include size(80%, 80vh);
+    @include flex(flex, space-around, center, column);
+}
+
+// extand class in
+%inherit-flex {
+    @include flex(flex, space-around, center);
+}
+
+.timer {
+    @include size(inherit, 30vh);
+    @extend %inherit-flex;
+}
+
+.times {
+    @include size(20%, 85%);
+    background-color: transparent;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: var(--font-family2);
+    color: var(--fiveth-color);
+    p {
+        font-size: 4rem;
+    }
+    span {
+        color: var(--threet-color);
+        font-size: 3rem;
+    }
+    &:hover {
+        box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+    }
+    transition: all 1s ease-in-out;
+}
+
+.timer-btn-group {
+    @extend %inherit-flex;
+    width: 80%;
+    color: var(--fiveth-color);
+}
+
+.timer-btn {
+    @include size(120px, 40px);
+    background-color: transparent;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+    color: var(--threet-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: box-shadow 1.2 ease-in-out;
+    &:active {
+        transition: all 2.5s ease-in-out;
+        box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+    }
+}
+
+#record {
+    @include size(40%, 200px);
+    resize: none;
+    border: none;
+    font-size: 2rem;
+    color: map-get($map: $color, $key: one);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.65);
+}
+
+.active-button {
+    box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+    i {
+        color: #17aef3;
+    }
+}

@@ -1,0 +1,52 @@
+@import "mixin";
+@import "component";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+// @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+:root {
+    --bg-color: #e6e6e6;
+    --bg-icon: #03a9f4;
+    --color: #1e1e1e;
+    --frist-color: #93a2a3;
+    --second-color: #7ed6df;
+    --threet-color: #17aef3;
+    --fourth-color: #56bdeb;
+    --fiveth-color: #8c8fa3;
+    --li-color: #01080c;
+    --font: "Lora", serif;
+    --font-family2: "Orbitron", monospace, sans-serif;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    @include flex(flex,
+    center,
+    center,
+    column);
+    background-color: var(--bg-color);
+    font-family: var(--font);
+    color: var(--color);
+    height: 100vh;
+    font-weight: 400;
+}

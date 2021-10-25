@@ -1,3 +1,4 @@
+$color: ( one: #2f3640, two: #f5f6fa, three: #c23616, four: #0097e6, five: #44bd32, six: #fbc531, seven: #32bda9, );
 @mixin flex($display, $jusify, $align: center, $direction: row) {
     display: $display;
     flex-direction: $direction;

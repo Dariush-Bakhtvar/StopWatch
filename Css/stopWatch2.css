@@ -772,6 +772,7 @@
   flex-direction: column;
   font-family: var(--font-family2);
   color: var(--fiveth-color);
+  transition: all 1s ease-in-out;
 }
 
 .times p {
@@ -785,7 +786,6 @@
 
 .times:hover {
   box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
-  transition: all 1s ease-in-out;
 }
 
 .timer-btn-group {
@@ -1655,6 +1655,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family2);
   color: var(--fiveth-color);
+  transition: all 1s ease-in-out;
 }
 
 .times p {
@@ -1668,7 +1669,6 @@ body {
 
 .times:hover {
   box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
-  transition: all 1s ease-in-out;
 }
 
 .timer-btn-group {
@@ -1717,4 +1717,4 @@ body {
 .active-button i {
   color: #17aef3;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stopWatch2.css.map */
