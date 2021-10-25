@@ -20,6 +20,7 @@
   top: 50%;
 }
 
+/** controll button stop and play and lap */
 .controll-btn {
   width: 100%;
   height: 45px;
@@ -61,7 +62,6 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  animation: loading 3s infinite;
 }
 
 .stopwatch .clockline li:nth-child(1) {
@@ -684,16 +684,60 @@
   height: 32px;
 }
 
+.stopwatch .clockline li:nth-child(1) {
+  animation-delay: 1ms;
+}
+
+.stopwatch .clockline li:nth-child(2) {
+  animation-delay: 2ms;
+}
+
+.stopwatch .clockline li:nth-child(3) {
+  animation-delay: 3ms;
+}
+
+.stopwatch .clockline li:nth-child(4) {
+  animation-delay: 4ms;
+}
+
+.stopwatch .clockline li:nth-child(5) {
+  animation-delay: 5ms;
+}
+
+.stopwatch .clockline li:nth-child(6) {
+  animation-delay: 6ms;
+}
+
+.stopwatch .clockline li:nth-child(7) {
+  animation-delay: 7ms;
+}
+
+.stopwatch .clockline li:nth-child(8) {
+  animation-delay: 8ms;
+}
+
+.stopwatch .clockline li:nth-child(9) {
+  animation-delay: 9ms;
+}
+
 @keyframes loading {
   0% {
-    background-color: var(--frist-color);
-  }
-  50% {
-    background-color: #17aef3;
+    opacity: 1;
+    background: #17aef3 none repeat scroll 0% 0%;
   }
   100% {
-    background-color: var(--frist-color);
+    opacity: 0;
   }
+}
+
+/** active loading animation when user click on start btn */
+.active {
+  animation: loading 1.1s linear infinite;
+}
+
+/** rotat reset button */
+.rotate {
+  transform: rotate(180deg);
 }
 
 :root {
