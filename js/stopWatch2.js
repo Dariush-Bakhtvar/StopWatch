@@ -17,8 +17,8 @@
 // }
 /*
 /** initial varible */
-
-let [counter, i, j, playerCounter] = Array(3).fill(0);
+// add 0 for primery value of variable
+let [counter, i, playerCounter] = Array(2).fill(0);
 let playerList = [];
 let Interval1, Interval2;
 // scoreboard for show info
@@ -63,13 +63,13 @@ Play.addEventListener('click', () => {
 Pause.addEventListener('click', puaseConter);
 // add Player Record to List
 addList.addEventListener('click', () => {
-    playerCounter++;
+    playerCounter += 1;
     playerList.push(`Player ${playerCounter}: ${Hourse.innerHTML}:${Minuts.innerHTML}:${Seconds.innerHTML}:${Miliseconds.innerHTML} \n`);
     textArea.value = playerList.join(' ');
 });
 //  reset all timer vlaue and PlayerList value;
 Reset.addEventListener('click', () => {
-    counter = i = j = playerCounter = 0;
+    counter = i = playerCounter = 0;
     playerList = [];
     textArea.value = "";
     Hourse.innerHTML = Minuts.innerHTML = Seconds.innerHTML = Miliseconds.innerHTML = "00";

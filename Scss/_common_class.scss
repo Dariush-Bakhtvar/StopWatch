@@ -9,3 +9,9 @@
     box-shadow: var(--default-shadow);
     border-radius: var(--default-radius);
 }
+
+%comon2 {
+    border-radius: 50%;
+    background: #e6e6e6;
+    box-shadow: 5px 5px 14px #cfcfcf, -5px -5px 14px #fdfdfd;
+}
